@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-function Footer() {
+function FooterHome() {
   return (
     <Wrapper>
       <div>Footer</div>
@@ -17,4 +17,4 @@ const Wrapper = styled.footer`
   margin: 0 auto;
 `;
 
-export default Footer;
+export default FooterHome;

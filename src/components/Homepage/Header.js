@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Schriftzug from "../Homepage/img/Schriftzug.jpg";
 
-function Header() {
+function HeaderHome() {
   return (
     <Wrapper>
       <Image src={Schriftzug} alt="Lakritzel"></Image>
@@ -23,4 +23,4 @@ const Image = styled.img`
   height: 6rem;
   padding: 0;
 `;
-export default Header;
+export default HeaderHome;

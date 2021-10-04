@@ -1,6 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+
+:root {
+  --border-radius: 5px;
+  --main-padding: 5px;
+  --color-fond: black;
+}
+
 html {
     box-sizing: border-box;
 }
