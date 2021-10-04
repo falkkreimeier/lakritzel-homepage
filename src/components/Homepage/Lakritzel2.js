@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BottleImg from "../img/painted-bottle.jpg";
+import BottleImg from "../Homepage/img/painted-bottle.jpg";
 
 function Shop() {
   return (

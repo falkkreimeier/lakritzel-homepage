@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import QuoteImg from "../img/Süß.jpg";
+import QuoteImg from "../Homepage/img/Süß.jpg";
 
 function Quote() {
   return (

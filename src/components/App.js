@@ -1,13 +1,13 @@
 import styled, { css } from "styled-components";
-import Header from "./Header";
-import Footer from "./Footer";
-import Shop from "./Lakritzel2";
-import Reception from "./Reception";
-import Lakritzel from "./Lakritzel";
-import Lakritzel2 from "./Shop";
-import Quote from "./Quote";
-import Quote2 from "./Quote2";
-import Portfolio from "./Portfolio";
+import Header from "./Homepage/Header";
+import Footer from "./Homepage/Footer";
+import Shop from "./Homepage/Lakritzel2";
+import Reception from "./Homepage/Reception";
+import Lakritzel from "./Homepage/Lakritzel";
+import Lakritzel2 from "./Homepage/Shop";
+import Quote from "./Homepage/Quote";
+import Quote2 from "./Homepage/Quote2";
+import Portfolio from "./Homepage/Portfolio";
 
 function App() {
   return (
@@ -78,19 +78,6 @@ const FlipCardFront = styled.section`
     margin: 0 auto;
   }
 `;
-
-// const FlipCardBack = styled.div`
-//   align-items: center;
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   backface-visibility: hidden;
-//   font-size: 1rem;
-//   color: black;
-//   transform: rotateY(180deg);
-//   background-color: rgb(5, 150, 135);
-//   border-radius: 20px;
-// `;
 
 const FlipCardBack = styled.section`
   /* align-items: center;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import PortfolioImg from "../img/Portfolio.jpg";
+import PortfolioImg from "../Homepage/img/Portfolio.jpg";
 
 function Portfolio() {
   return (

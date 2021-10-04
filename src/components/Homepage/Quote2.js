@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import QuoteImg from "../img/Nacht.jpg";
+import QuoteImg from "../Homepage/img/Nacht.jpg";
 
 function Quote2() {
   return (

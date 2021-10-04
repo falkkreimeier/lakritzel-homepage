@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LakritzelImg from "../img/Übergeschnapst.jpg";
+import LakritzelImg from "../Homepage/img/Übergeschnapst.jpg";
 
 function Lakritzel() {
   return (

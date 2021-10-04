@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Schriftzug from "../img/Schriftzug.jpg";
+import Schriftzug from "../Homepage/img/Schriftzug.jpg";
 
 function Header() {
   return (
