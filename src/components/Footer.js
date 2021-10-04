@@ -10,12 +10,8 @@ function Footer() {
 
 const Wrapper = styled.footer`
   grid-area: footer;
-  border: 1px solid white;
-  border-radius: 25px;
-  width: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid white;
   background-color: black;
   color: white;
   margin: 0 auto;

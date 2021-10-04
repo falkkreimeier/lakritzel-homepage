@@ -11,7 +11,6 @@ function Header() {
 
 const Wrapper = styled.header`
   grid-area: header;
-  width: 100%;
   display: flex;
   justify-content: center;
   grid-area: header;

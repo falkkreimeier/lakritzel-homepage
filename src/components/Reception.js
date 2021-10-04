@@ -3,7 +3,7 @@ import styled from "styled-components";
 function Reception() {
   return (
     <Wrapper>
-      <Headline>LOREM IPSUM</Headline>
+      <Headline>Willkommen auf der dunklen Seite!</Headline>
       <Text>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -21,7 +21,6 @@ function Reception() {
 
 const Wrapper = styled.section`
   height: 20rem;
-  /* width: 4rem; */
   border: 1px solid white;
   border-radius: 15px;
   padding: 15px;
@@ -30,6 +29,10 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media only screen and (max-width: 800px) {
+    margin: 0 auto;
+    width: 29rem;
+  }
 `;
 
 const Headline = styled.h1`
