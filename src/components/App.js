@@ -37,6 +37,24 @@ const Wrapper = styled.section`
     "lakritzel1 lakritzel2 shop portfolio"
     "footer footer footer footer";
   grid-gap: 2px;
+  @media only screen and (max-width: 800px) {
+    max-width: 375px;
+    grid-gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    grid-template-areas:
+      "header"
+      "lakritzel2"
+      "shop"
+      "reception"
+      "quote"
+      "lakritzel1"
+      "quote2"
+      "portfolio"
+      "footer";
+    margin: 0 auto;
+  }
 `;
 
 export default App;

@@ -5,7 +5,7 @@ function Portfolio() {
   return (
     <Wrapper>
       <Image src={PortfolioImg} alt="Picture of a looney Lakritzel"></Image>
-      <Button type="button">Das bin ich</Button>
+      <Button type="button">Über mich</Button>
     </Wrapper>
   );
 }

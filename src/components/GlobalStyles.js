@@ -13,6 +13,10 @@ html {
 
 body {
     background-color: black;
+
+     @media only screen and (max-width: 375px) {
+         max-width: 375px;
+     }
 }
 
 `;

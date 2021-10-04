@@ -19,6 +19,9 @@ const Wrapper = styled.section`
 const Image = styled.img`
   height: 20rem;
   border-radius: 15px;
+  @media only screen and (max-width: 800px) {
+    height: 29rem;
+  }
 `;
 
 export default Quote2;
