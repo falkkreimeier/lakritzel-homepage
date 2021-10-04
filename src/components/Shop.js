@@ -10,15 +10,15 @@ function Shop() {
 
 const Wrapper = styled.section`
   height: 20rem;
-  /* width: 20rem; */
   background-color: white;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: shop;
-  @media only screen and (max-width: 375px) {
-    width: none;
+  @media only screen and (max-width: 800px) {
+    margin: 0 auto;
+    width: 29rem;
   }
 `;
 
