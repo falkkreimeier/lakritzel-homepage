@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-function Shop() {
+function OrderButton() {
   return (
     <Wrapper>
       <Button>HIER KAUFEN</Button>
@@ -40,4 +40,4 @@ const Button = styled.button`
   }
 `;
 
-export default Shop;
+export default OrderButton;
