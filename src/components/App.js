@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 import HeaderHome from "./Homepage/Header";
 import FooterHome from "./Homepage/Footer";
-import Shop from "./Homepage/Lakritzel2";
+import Lakritzel2 from "./Homepage/Lakritzel2";
 import Reception from "./Homepage/Reception";
 import Lakritzel from "./Homepage/Lakritzel";
-import Lakritzel2 from "./Homepage/Shop";
+import Shop from "./Homepage/Shop";
 import Quote from "./Homepage/Quote";
 import Quote2 from "./Homepage/Quote2";
 import PortfolioLink from "./Homepage/PortfolioLink";
@@ -23,27 +23,34 @@ import Blog1 from "./Portfolio/src/Blog1";
 import Blog2 from "./Portfolio/src/Blog2";
 import Blog3 from "./Portfolio/src/Blog3";
 import { Link, Route, Switch } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [showShop, setShowShop] = useState(false);
+  const handleShowShopButtonClick = () => {
+    alert("clicked Button");
+    setShowShop(!showShop);
+  };
+  console.log(handleShowShopButtonClick);
   return (
     <div>
+      <HeaderHome />
       <Switch>
         <Route exact path="/">
-          <FlipCard>
+          <FlipCard showShop={showShop}>
             <FlipCardFront>
-              <HeaderHome />
               <Lakritzel />
               <Reception />
               <Lakritzel2 />
               <Quote />
               <Quote2 />
-              <Shop />
+              <Shop showShopButton={handleShowShopButtonClick} />
               <PortfolioLink />
               <FooterHome />
             </FlipCardFront>
 
             <FlipCardBack>
-              <Header />
+              <Lakritzel2 />
               <Footer />
             </FlipCardBack>
           </FlipCard>
@@ -72,8 +79,9 @@ function App() {
   );
 }
 
-const Container = styled.div`
+const Container = styled.section`
   display: grid;
+  margin: 0px 20px auto;
   max-width: 100vh;
   grid-template-areas:
     "head head head head"
@@ -86,7 +94,7 @@ const Container = styled.div`
   text-align: center;
   font-family: "PT Serif", serif;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 1000px) {
     grid-template-areas:
       "head"
       "profileArea"
@@ -106,27 +114,45 @@ const Container = styled.div`
   }
 `;
 
+export const Linkto = styled(Link)`
+  position: relative;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: var(--main-padding);
+  margin: 0 0 20px 0;
+  border-radius: 40px 40px 40px 40px;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  color: black;
+  box-shadow: 5px 5px 10px 5px black;
+  z-index: 1;
+  &:hover {
+    background-color: black;
+    box-shadow: 0px 0px 5px 5px grey;
+    color: white;
+  }
+`;
+
 const FlipCard = styled.section`
-  display: flex;
-  justify-content: center;
   perspective: 1000px;
   padding: 0px;
   transition: transform 1s;
   transform-style: preserve-3d;
   position: relative;
 
-  ${({ showDetails }) =>
-    showDetails &&
+  ${({ showShop }) =>
+    showShop &&
     css`
       transform: rotateY(180deg);
     `}
 `;
 
 const FlipCardFront = styled.section`
-  margin: 0px 80px 0px 80px;
+  margin: 0px auto;
   backface-visibility: hidden;
   position: absolute;
   border-radius: 25px;
+  max-width: 1200px;
   display: grid;
   grid-template-areas:
     "header header header header"
@@ -134,7 +160,7 @@ const FlipCardFront = styled.section`
     "lakritzel1 lakritzel2 shop portfolioLink"
     "footer footer footer footer";
   grid-gap: 2px;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     grid-gap: 6px;
     grid-template-areas:
       "header"
@@ -146,7 +172,7 @@ const FlipCardFront = styled.section`
       "quote2"
       "portfolioLink"
       "footer";
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 `;
 
@@ -161,7 +187,7 @@ const FlipCardBack = styled.section`
     "formular lakritzel2"
     "footer footer";
   grid-gap: 2px;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     max-width: 375px;
     grid-gap: 6px;
     justify-content: center;
@@ -169,6 +195,7 @@ const FlipCardBack = styled.section`
     margin: 0 auto;
     grid-template-areas:
       "header"
+      "lakritzel2"
       "Footer";
     margin: 0 auto;
   }

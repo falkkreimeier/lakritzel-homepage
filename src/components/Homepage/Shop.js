@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-function Shop() {
+function Shop({ showShopButton }) {
   return (
     <Wrapper>
-      <Button>HIER KAUFEN</Button>
+      <Button onClick={showShopButton}>HIER KAUFEN</Button>
     </Wrapper>
   );
 }
@@ -16,7 +16,7 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   grid-area: shop;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1400px) {
     margin: 0 auto;
     width: 29rem;
   }
