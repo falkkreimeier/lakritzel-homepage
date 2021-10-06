@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 
 :root {
-  --border-radius: 5px;
+  --border-radius: 15px;
   --main-padding: 5px;
   --color-fond: black;
 }
