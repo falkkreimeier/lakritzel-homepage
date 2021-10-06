@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import BottleImg from "../Homepage/img/painted-bottle.jpg";
 
-function Shop() {
+function Lakritzel2() {
   return (
     <Wrapper>
       <Image src={BottleImg} alt="Picture of a painted Lakritzel bottle" />
@@ -25,4 +25,4 @@ const Image = styled.img`
   }
 `;
 
-export default Shop;
+export default Lakritzel2;

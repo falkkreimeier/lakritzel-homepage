@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 import HeaderHome from "./Homepage/Header";
 import FooterHome from "./Homepage/Footer";
-import Shop from "./Homepage/Lakritzel2";
+import Lakritzel2 from "./Homepage/Lakritzel2";
 import Reception from "./Homepage/Reception";
 import Lakritzel from "./Homepage/Lakritzel";
-import Lakritzel2 from "./Homepage/Shop";
+import OrderButton from "./Homepage/OrderButton";
 import Quote from "./Homepage/Quote";
 import Quote2 from "./Homepage/Quote2";
 import PortfolioLink from "./Homepage/PortfolioLink";
@@ -37,7 +37,7 @@ function App() {
               <Lakritzel2 />
               <Quote />
               <Quote2 />
-              <Shop />
+              <OrderButton />
               <PortfolioLink />
               <FooterHome />
             </FlipCardFront>
