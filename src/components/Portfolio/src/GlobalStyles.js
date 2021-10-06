@@ -29,7 +29,7 @@ body {
  background-color: black;
   text-align: center;
   font-family: 'PT Serif', serif;
-  margin: 0px 20px 0px 20px;
+  margin: 0 auto;
 
    @media only screen and (max-width: 375px) {
      max-width: 375px;

@@ -25,7 +25,7 @@ const StyledFotter = styled.footer`
   padding: var(--main-padding);
   margin-top: 0.5rem;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 1000px) {
     max-width: 375px;
     margin: 0;
   }

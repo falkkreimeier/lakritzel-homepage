@@ -19,7 +19,7 @@ const Wrapper = styled.section`
 const Image = styled.img`
   height: 20rem;
   border-radius: 15px;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     height: 29rem;
   }
 `;

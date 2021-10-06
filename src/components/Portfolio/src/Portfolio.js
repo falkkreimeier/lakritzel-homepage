@@ -16,7 +16,7 @@ function Portfolio() {
       </a>
       <div>
         <a href={PortfolioDatei}>
-          <Button>Portfolio</Button>
+          <Button to="/portfolio">Portfolio</Button>
         </a>
       </div>
     </Wrapper>

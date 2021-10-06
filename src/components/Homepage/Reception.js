@@ -29,7 +29,7 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     margin: 0 auto;
     width: 29rem;
   }

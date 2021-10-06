@@ -19,6 +19,7 @@ function Interests() {
 
 const Wrapper = styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: column;
   background: white;
   grid-area: interests;
@@ -28,12 +29,13 @@ const Wrapper = styled.div`
 
 export const List = styled.li`
   text-align: left;
-  padding-bottom: -5px;
+  padding-bottom: 5px;
   font-family: "Inter", sans-serif;
 `;
 
 export const Ol = styled.ol`
   margin: 0;
+  padding-left: 25px;
 `;
 
 export default Interests;

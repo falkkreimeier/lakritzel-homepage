@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import BottleImg from "../Homepage/img/painted-bottle.jpg";
 
-function Shop() {
+function Lakritzel2() {
   return (
     <Wrapper>
       <Image src={BottleImg} alt="Picture of a painted Lakritzel bottle" />
@@ -20,9 +20,9 @@ const Image = styled.img`
   height: 20rem;
   border-radius: 15px;
   margin: 0;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     height: 26rem;
   }
 `;
 
-export default Shop;
+export default Lakritzel2;

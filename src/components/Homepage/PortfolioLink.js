@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import PortfolioImg from "../Homepage/img/Portfolio.jpg";
+import { Link } from "react-router-dom";
 
 function PortfolioLink() {
   return (
     <Wrapper>
       <Image src={PortfolioImg} alt="Picture of a looney Lakritzel"></Image>
-      <Button type="button">Über mich</Button>
+      <Link to="/portfolio">
+        <ButtonLink type="button">Portfolio</ButtonLink>
+      </Link>
     </Wrapper>
   );
 }
@@ -25,7 +28,7 @@ const Image = styled.img`
   border-radius: 15px;
 `;
 
-const Button = styled.button`
+const ButtonLink = styled.button`
   width: 120px;
   height: 25px;
   margin: 14px;

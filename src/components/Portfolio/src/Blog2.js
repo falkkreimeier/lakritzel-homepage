@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   grid-area: blog2;
   border-radius: var(--border-radius);
   padding: var(--main-padding);
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 1000px) {
     max-width: 375px;
     margin: 0;
   }
