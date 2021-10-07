@@ -20,10 +20,9 @@ html {
 
 body {
     background-color: black;
+    width: 100%;
+    height: 100vh;
 
-     @media only screen and (max-width: 375px) {
-         max-width: 375px;
-     }
 }
 
 `;

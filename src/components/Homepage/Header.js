@@ -10,11 +10,10 @@ function HeaderHome() {
 }
 
 const Wrapper = styled.header`
-  /* grid-area: header; */
-  max-width: 1200px;
   display: flex;
   justify-content: center;
   grid-area: header;
+
   background-color: black;
   color: white;
 `;

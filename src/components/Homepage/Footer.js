@@ -9,12 +9,11 @@ function FooterHome() {
 }
 
 const Wrapper = styled.footer`
-  grid-area: footer;
   display: flex;
+  grid-area: footer;
   justify-content: center;
   background-color: black;
   color: white;
-  margin: 0 auto;
 `;
 
 export default FooterHome;
