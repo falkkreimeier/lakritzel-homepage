@@ -17,7 +17,6 @@ const Wrapper = styled.section`
   align-items: center;
   grid-area: shop;
   @media only screen and (max-width: 1400px) {
-    margin: 0 auto;
     width: 29rem;
   }
 `;
@@ -31,12 +30,11 @@ const Button = styled.button`
   height: 16rem;
   font-size: 3rem;
   border-radius: 15px;
-  box-shadow: 0px 10px 15px 5px black;
 
   box-shadow: 0px 5px 10px 5px grey;
   &:hover {
-    border: 1px solid white;
-    box-shadow: none;
+    border: 5px solid white;
+    box-shadow: 0px 10px 15px 10px black;
   }
 `;
 
