@@ -15,10 +15,6 @@ html {
 
 * {
   box-sizing: inherit;
-  @media only screen and (max-width: 375px) {
-     max-width: 375px;
-     margin:0;
-    }
 }
 
 ul {
@@ -27,14 +23,8 @@ ul {
 
 body {
  background-color: black;
-  text-align: center;
-  font-family: 'PT Serif', serif;
-  margin: 0 auto;
-
-   @media only screen and (max-width: 375px) {
-     max-width: 375px;
-     margin:0;
-    }
+ font-family: 'PT Serif', serif;
+ margin: 0 auto;
 }`;
 
 export default GlobalStyle;
