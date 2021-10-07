@@ -7,13 +7,14 @@ function PortfolioLink() {
     <Wrapper>
       <Image src={PortfolioImg} alt="Picture of a looney Lakritzel"></Image>
       <Link to="/portfolio">
-        <ButtonLink type="button">Portfolio</ButtonLink>
+        <ButtonLink type="button">Kritzelkopf</ButtonLink>
       </Link>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section`
+  height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,8 +39,8 @@ const ButtonLink = styled.button`
   color: white;
   box-shadow: 5px 5px 5px 2px grey;
   &:hover  {
-    border: 1px solid grey;
-    box-shadow: none;
+    border: 3px solid white;
+    box-shadow: 10px 10px 10px 4px black;
   }
 `;
 
