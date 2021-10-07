@@ -4,46 +4,42 @@ import Mail from "./img/email_white_24dp.svg";
 
 function Footer() {
   return (
-    <StyledFotter>
-      <StyledText>Falk Kreimeier </StyledText>
-      <StyledIcons src={Phone} alt="phonenumer" />
-      <StyledText>0152-05639742 </StyledText>
+    <Wrapper>
+      <Text>Falk Kreimeier </Text>
+      <Icons src={Phone} alt="phonenumer" />
+      <Text>0152-05639742 </Text>
 
-      <StyledIcons src={Mail} alt="E-Mail Adresse" />
-      <StyledText>f.kreimeier@gmx.net</StyledText>
-    </StyledFotter>
+      <Icons src={Mail} alt="E-Mail Adresse" />
+      <Text>info@lakritzel.com</Text>
+    </Wrapper>
   );
 }
 
-const StyledFotter = styled.footer`
+const Wrapper = styled.footer`
   display: flex;
   justify-content: center;
   background: black;
   color: white;
   grid-area: footerpf;
-  border-radius: var(--border-radius);
-  padding: var(--main-padding);
   margin-top: 0.5rem;
 
   @media only screen and (max-width: 1000px) {
     max-width: 375px;
-    margin: 0;
+    margin: 0 auto;
   }
 `;
-const StyledText = styled.p`
-  margin: 0;
+const Text = styled.p`
   font-family: "Inter", sans-serif;
 
-  @media only screen and (max-width: 375px) {
-    font-size: 10px;
-    margin: 0;
+  @media only screen and (max-width: 1000px) {
+    font-size: 11px;
   }
 `;
-const StyledIcons = styled.img`
+const Icons = styled.img`
   height: 1.2rem;
   padding-right: 0.5rem;
   padding-left: 2rem;
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 1000px) {
     height: 0.8rem;
   }
 `;
