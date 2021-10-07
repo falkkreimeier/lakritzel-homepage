@@ -5,7 +5,9 @@ function PortfolioLink() {
   return (
     <Wrapper>
       <Image src={PortfolioImg} alt="Picture of a looney Lakritzel"></Image>
-      <Button type="button">Über mich</Button>
+      <Button to="/portfolio" type="button">
+        Über mich
+      </Button>
     </Wrapper>
   );
 }

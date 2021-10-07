@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-function OrderButton() {
+function ButtonToShop({ handleButtonClick }) {
   return (
     <Wrapper>
-      <Button>HIER KAUFEN</Button>
+      <Button onClick={handleButtonClick}>HOL MICH HIER RAUS!</Button>
     </Wrapper>
   );
 }
@@ -31,13 +31,12 @@ const Button = styled.button`
   height: 16rem;
   font-size: 3rem;
   border-radius: 15px;
-  box-shadow: 0px 10px 15px 5px black;
 
   box-shadow: 0px 5px 10px 5px grey;
   &:hover {
-    border: 1px solid white;
-    box-shadow: none;
+    border: 2px solid white;
+    box-shadow: 0px 20px 20px 10px black;
   }
 `;
 
-export default OrderButton;
+export default ButtonToShop;

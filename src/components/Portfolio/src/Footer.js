@@ -10,7 +10,7 @@ function Footer() {
       <StyledText>0152-05639742 </StyledText>
 
       <StyledIcons src={Mail} alt="E-Mail Adresse" />
-      <StyledText>f.kreimeier@gmx.net</StyledText>
+      <StyledText>info@lakritzel.net</StyledText>
     </StyledFotter>
   );
 }
@@ -20,14 +20,13 @@ const StyledFotter = styled.footer`
   justify-content: center;
   background: black;
   color: white;
-  grid-area: footerpf;
+  grid-area: footer;
   border-radius: var(--border-radius);
   padding: var(--main-padding);
   margin-top: 0.5rem;
 
   @media only screen and (max-width: 375px) {
     max-width: 375px;
-    margin: 0;
   }
 `;
 const StyledText = styled.p`
@@ -36,7 +35,6 @@ const StyledText = styled.p`
 
   @media only screen and (max-width: 375px) {
     font-size: 10px;
-    margin: 0;
   }
 `;
 const StyledIcons = styled.img`
