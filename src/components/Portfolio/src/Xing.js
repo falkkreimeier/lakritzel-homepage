@@ -1,26 +1,26 @@
-import styled from 'styled-components'
-import Xingimg from './img/xing.svg'
+import styled from "styled-components";
+import Xingimg from "./img/xing.svg";
 
 function Xing() {
   return (
-    <StyleA href="https://www.xing.com/profile/falk_kreimeier">
-      <StyledXing>
-        <StyledImg src={Xingimg} alt="Mein Xing Profil" />
-      </StyledXing>
-    </StyleA>
-  )
+    <Wrapper href="https://www.xing.com/profile/falk_kreimeier">
+      <ImageContainer>
+        <Img src={Xingimg} alt="Mein Xing Profil" />
+      </ImageContainer>
+    </Wrapper>
+  );
 }
 
-export const StyledImg = styled.img`
+export const Img = styled.img`
   position: sticky;
   height: 3rem;
-`
+`;
 
-const StyleA = styled.a`
+const Wrapper = styled.a`
   grid-area: xing;
-`
+`;
 
-const StyledXing = styled.div`
+const ImageContainer = styled.div`
   height: 90px;
   display: flex;
   justify-content: center;
@@ -33,5 +33,5 @@ const StyledXing = styled.div`
   &:hover {
     background: #d4d4d4;
   }
-`
-export default Xing
+`;
+export default Xing;
