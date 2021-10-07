@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 import HeaderHome from "./Homepage/Header";
-import FooterHome from "./Homepage/Footer";
 import Lakritzel2 from "./Homepage/Lakritzel2";
 import Reception from "./Homepage/Reception";
 import Lakritzel from "./Homepage/Lakritzel";
-import Shop from "./Homepage/Shop";
+import ButtonToShop from "./Homepage/ButtonToShop";
+import ButtonToHomepage from "./Homepage/ButtonToHomepage";
 import Quote from "./Homepage/Quote";
 import Quote2 from "./Homepage/Quote2";
 import PortfolioLink from "./Homepage/PortfolioLink";
@@ -43,15 +43,16 @@ function App() {
               <Lakritzel2 />
               <Quote />
               <Quote2 />
-              <Shop showShopButton={handleShowShopButtonClick} />
+              <ButtonToShop showShopButton={handleShowShopButtonClick} />
               <PortfolioLink />
-              <FooterHome />
+              <Footer />
             </FlipCardFront>
 
             <FlipCardBack>
               <HeaderHome />
               <Lakritzel2 />
-              <FooterHome />
+              <ButtonToHomepage showShopButton={handleShowShopButtonClick} />
+              <Footer />
             </FlipCardBack>
           </FlipCard>
         </Route>
@@ -114,25 +115,6 @@ const Wrapper = styled.section`
   }
 `;
 
-export const Linkto = styled(Link)`
-  position: relative;
-  text-decoration: none;
-  border: 1px solid black;
-  padding: var(--main-padding);
-  margin: 0 0 20px 0;
-  border-radius: 40px 40px 40px 40px;
-  background-color: white;
-  font-family: "Inter", sans-serif;
-  color: black;
-  box-shadow: 5px 5px 10px 5px black;
-  z-index: 1;
-  &:hover {
-    background-color: black;
-    box-shadow: 0px 0px 5px 5px grey;
-    color: white;
-  }
-`;
-
 const FlipCard = styled.section`
   width: 1200px;
   margin: 0px 70px 0px 70px;
@@ -150,16 +132,16 @@ const FlipCard = styled.section`
 `;
 
 const FlipCardFront = styled.section`
-  margin: 0px auto;
   backface-visibility: hidden;
   position: absolute;
+  position: center;
   border-radius: 25px;
   display: grid;
   grid-template-areas:
     "header header header header"
     "quote reception reception quote2"
     "lakritzel1 lakritzel2 shop portfolioLink"
-    "footer footer footer footer";
+    "footerpf footerpf footerpf footerpf";
   grid-gap: 2px;
   @media only screen and (max-width: 1000px) {
     grid-gap: 6px;
@@ -172,20 +154,21 @@ const FlipCardFront = styled.section`
       "lakritzel1"
       "quote2"
       "portfolioLink"
-      "footer";
+      "footerpf";
   }
 `;
 
 const FlipCardBack = styled.section`
   backface-visibility: hidden;
+  position: absolute;
   transform: rotateY(180deg);
   border: 1px solid black;
   border-radius: 25px;
   display: grid;
   grid-template-areas:
-    "header header"
-    "formular lakritzel2"
-    "footer footer";
+    "header header header header"
+    "formular lakritzel2 shop shop"
+    "footerpf footerpf footerpf footerpf";
   grid-gap: 2px;
   @media only screen and (max-width: 1000px) {
     max-width: 375px;
@@ -195,7 +178,8 @@ const FlipCardBack = styled.section`
     grid-template-areas:
       "header"
       "lakritzel2"
-      "Footer";
+      "shop"
+      "footerpf";
     margin: 0 auto;
   }
 `;
