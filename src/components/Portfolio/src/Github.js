@@ -1,26 +1,26 @@
-import styled from 'styled-components'
-import Githubimg from './img/github.svg.png'
+import styled from "styled-components";
+import Githubimg from "./img/github.svg.png";
 
 function Github() {
   return (
-    <StyledA href="https://github.com/falkkreimeier">
-      <StyledGithub id="github">
-        <StyledImg src={Githubimg} alt="Mein github Profil" />
-      </StyledGithub>
-    </StyledA>
-  )
+    <Wrapper href="https://github.com/falkkreimeier">
+      <ImageContainer id="github">
+        <Img src={Githubimg} alt="Mein github Profil" />
+      </ImageContainer>
+    </Wrapper>
+  );
 }
 
-export const StyledImg = styled.img`
+export const Img = styled.img`
   position: sticky;
   height: 4rem;
-`
+`;
 
-const StyledA = styled.a`
+const Wrapper = styled.a`
   grid-area: github;
-`
+`;
 
-const StyledGithub = styled.div`
+const ImageContainer = styled.div`
   height: 90px;
   display: flex;
   justify-content: center;
@@ -32,5 +32,5 @@ const StyledGithub = styled.div`
   &:hover {
     background: #d4d4d4;
   }
-`
-export default Github
+`;
+export default Github;

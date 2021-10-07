@@ -4,18 +4,18 @@ import Mail from "./img/email_white_24dp.svg";
 
 function Footer() {
   return (
-    <StyledFotter>
-      <StyledText>Falk Kreimeier </StyledText>
-      <StyledIcons src={Phone} alt="phonenumer" />
-      <StyledText>0152-05639742 </StyledText>
+    <Wrapper>
+      <Text>Falk Kreimeier </Text>
+      <Icons src={Phone} alt="phonenumer" />
+      <Text>0152-05639742 </Text>
 
-      <StyledIcons src={Mail} alt="E-Mail Adresse" />
-      <StyledText>info@lakritzel.net</StyledText>
-    </StyledFotter>
+      <Icons src={Mail} alt="E-Mail Adresse" />
+      <Text>info@lakritzel.net</Text>
+    </Wrapper>
   );
 }
 
-const StyledFotter = styled.footer`
+const Wrapper = styled.footer`
   display: flex;
   justify-content: center;
   background: black;
@@ -29,7 +29,7 @@ const StyledFotter = styled.footer`
     max-width: 375px;
   }
 `;
-const StyledText = styled.p`
+const Text = styled.p`
   margin: 0;
   font-family: "Inter", sans-serif;
 
@@ -37,7 +37,7 @@ const StyledText = styled.p`
     font-size: 10px;
   }
 `;
-const StyledIcons = styled.img`
+const Icons = styled.img`
   height: 1.2rem;
   padding-right: 0.5rem;
   padding-left: 2rem;
