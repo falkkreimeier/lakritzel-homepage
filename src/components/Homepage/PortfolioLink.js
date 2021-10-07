@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import PortfolioImg from "../Homepage/img/Portfolio.jpg";
+import { Link } from "react-router-dom";
 
 function PortfolioLink() {
   return (
@@ -27,7 +28,9 @@ const Image = styled.img`
   border-radius: 15px;
 `;
 
-const Button = styled.button`
+const Button = styled(Link)`
+  text-decoration: none;
+  text-align: center;
   width: 120px;
   height: 25px;
   margin: 14px;
@@ -41,5 +44,4 @@ const Button = styled.button`
     box-shadow: none;
   }
 `;
-
 export default PortfolioLink;
