@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 import HeaderHome from "./Homepage/Header";
-import FooterHome from "./Homepage/Footer";
 import Lakritzel2 from "./Homepage/Lakritzel2";
 import Reception from "./Homepage/Reception";
 import Lakritzel from "./Homepage/Lakritzel";
-import OrderButton from "./Homepage/OrderButton";
+import ButtonToShop from "./Homepage/ButtonToShop";
+import ButtonToHomepage from "./Homepage/ButtonToHomepage";
 import Quote from "./Homepage/Quote";
 import Quote2 from "./Homepage/Quote2";
 import PortfolioLink from "./Homepage/PortfolioLink";
@@ -23,13 +23,19 @@ import Blog1 from "./Portfolio/src/Blog1";
 import Blog2 from "./Portfolio/src/Blog2";
 import Blog3 from "./Portfolio/src/Blog3";
 import { Link, Route, Switch } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [goToShop, setgoToShop] = useState(false);
+  function goToShopButton() {
+    setgoToShop(!goToShop);
+  }
+
   return (
     <div>
       <Switch>
         <Route exact path="/">
-          <FlipCard>
+          <FlipCard goToShop={goToShop}>
             <FlipCardFront>
               <HeaderHome />
               <Lakritzel />
@@ -37,13 +43,15 @@ function App() {
               <Lakritzel2 />
               <Quote />
               <Quote2 />
-              <OrderButton />
+              <ButtonToShop handleButtonClick={goToShopButton} />
               <PortfolioLink />
-              <FooterHome />
+              <Footer />
             </FlipCardFront>
 
             <FlipCardBack>
-              <Header />
+              <HeaderHome />
+              <Lakritzel2 />
+              <ButtonToHomepage handleButtonClick={goToShopButton} />
               <Footer />
             </FlipCardBack>
           </FlipCard>
@@ -115,8 +123,8 @@ const FlipCard = styled.section`
   transform-style: preserve-3d;
   position: relative;
 
-  ${({ showDetails }) =>
-    showDetails &&
+  ${({ goToShop }) =>
+    goToShop &&
     css`
       transform: rotateY(180deg);
     `}
@@ -153,13 +161,14 @@ const FlipCardFront = styled.section`
 const FlipCardBack = styled.section`
   backface-visibility: hidden;
   transform: rotateY(180deg);
+  position: absolute;
   border: 1px solid black;
   border-radius: 25px;
   display: grid;
   grid-template-areas:
-    "header header"
-    "formular lakritzel2"
-    "footer footer";
+    "header header header"
+    "formular lakritzel2 shop"
+    "footer footer footer";
   grid-gap: 2px;
   @media only screen and (max-width: 800px) {
     max-width: 375px;
