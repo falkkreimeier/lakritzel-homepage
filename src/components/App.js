@@ -28,17 +28,16 @@ import { useState } from "react";
 function App() {
   const [showShop, setShowShop] = useState(false);
   const handleShowShopButtonClick = () => {
-    alert("clicked Button");
     setShowShop(!showShop);
   };
   console.log(handleShowShopButtonClick);
   return (
     <div>
-      <HeaderHome />
       <Switch>
         <Route exact path="/">
           <FlipCard showShop={showShop}>
             <FlipCardFront>
+              <HeaderHome />
               <Lakritzel />
               <Reception />
               <Lakritzel2 />
@@ -50,14 +49,15 @@ function App() {
             </FlipCardFront>
 
             <FlipCardBack>
+              <HeaderHome />
               <Lakritzel2 />
-              <Footer />
+              <FooterHome />
             </FlipCardBack>
           </FlipCard>
         </Route>
 
         <Route exact path="/Portfolio">
-          <Container>
+          <Wrapper>
             <Header />
             <Profile />
             <Welcome />
@@ -72,14 +72,14 @@ function App() {
             <Blog2 />
             <Blog3 />
             <Footer />
-          </Container>
+          </Wrapper>
         </Route>
       </Switch>
     </div>
   );
 }
 
-const Container = styled.section`
+const Wrapper = styled.section`
   display: grid;
   margin: 0px 20px auto;
   max-width: 100vh;
@@ -134,6 +134,8 @@ export const Linkto = styled(Link)`
 `;
 
 const FlipCard = styled.section`
+  width: 1200px;
+  margin: 0px 70px 0px 70px;
   perspective: 1000px;
   padding: 0px;
   transition: transform 1s;
@@ -152,7 +154,6 @@ const FlipCardFront = styled.section`
   backface-visibility: hidden;
   position: absolute;
   border-radius: 25px;
-  max-width: 1200px;
   display: grid;
   grid-template-areas:
     "header header header header"
@@ -172,7 +173,6 @@ const FlipCardFront = styled.section`
       "quote2"
       "portfolioLink"
       "footer";
-    /* margin: 0 auto; */
   }
 `;
 
@@ -192,7 +192,6 @@ const FlipCardBack = styled.section`
     grid-gap: 6px;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     grid-template-areas:
       "header"
       "lakritzel2"
