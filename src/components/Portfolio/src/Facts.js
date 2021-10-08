@@ -1,39 +1,39 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 function Facts() {
   return (
-    <StyledFacts>
-      <StyledHeadline>Facts:</StyledHeadline>
-      <StyledOl>
-        <StyledList1>40 Jahre jung</StyledList1>
-        <StyledList1>1,93m klein</StyledList1>
-        <StyledList1>Hoffnungsloser Optimist</StyledList1>
-        <StyledList1>Philantrop</StyledList1>
-        <StyledList1>
+    <Wrapper>
+      <Headline>Facts:</Headline>
+      <Ol>
+        <List>40 Jahre jung</List>
+        <List>1,93m klein</List>
+        <List>Hoffnungsloser Optimist</List>
+        <List>Philantrop</List>
+        <List>
           Voll auf Spur, aber immer auch ein kleines bisschen daneben.
-        </StyledList1>
+        </List>
         <br />
-      </StyledOl>
-      <StyledHeadline>Zitate:</StyledHeadline>
-      <StyledOl>
-        <StyledList1>"Isst du das noch?!"</StyledList1>
-        <StyledList1>"Wer hat das Fettnäpfchen hier hingestellt?!"</StyledList1>
-      </StyledOl>
-    </StyledFacts>
-  )
+      </Ol>
+      <Headline>Zitate:</Headline>
+      <Ol>
+        <List>"Isst du das noch?!"</List>
+        <List>"Wer hat das Fettnäpfchen hier hingestellt?!"</List>
+      </Ol>
+    </Wrapper>
+  );
 }
 
-const StyledFacts = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   background: white;
   grid-area: facts;
   border-radius: var(--border-radius);
   padding: var(--main-padding);
-`
+`;
 
-const StyledHeadline = styled.h2`
-  font-family: 'Playfair Display', serif;
+const Headline = styled.h2`
+  font-family: "Playfair Display", serif;
   font-weight: 600;
   text-align: center;
   font-size: 1.3rem;
@@ -41,16 +41,16 @@ const StyledHeadline = styled.h2`
   margin: 2px 0px 2px 0px;
   text-decoration: none;
   color: #58555a;
-`
+`;
 
-const StyledList1 = styled.li`
+const List = styled.li`
   text-align: left;
   padding-bottom: -5px;
-  font-family: 'Inter', sans-serif;
-`
+  font-family: "Inter", sans-serif;
+`;
 
-const StyledOl = styled.ol`
+const Ol = styled.ol`
   margin: 0;
-`
+`;
 
-export default Facts
+export default Facts;

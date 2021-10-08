@@ -20,7 +20,7 @@ const Image = styled.img`
   height: 20rem;
   border-radius: 15px;
   @media only screen and (max-width: 800px) {
-    height: 29rem;
+    height: 24rem;
   }
 `;
 

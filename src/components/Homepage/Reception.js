@@ -3,17 +3,16 @@ import styled from "styled-components";
 function Reception() {
   return (
     <Wrapper>
-      <Headline>Willkommen auf der dunklen Seite!</Headline>
+      <Headline>HIIILFE!</Headline>
       <Text>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet.
+        Ich bin Lakritzel und dieser durchgeknallte Kritzelkopf hat mich über
+        Nacht einfach abgefüllt, in diese Flasche gestopft und dann behauptet
+        ich sei total übergeschnapst. Pff, dabei habe ich gerade mal 25% Alkohol
+        ... gut der Zucker haut ein bisschen rein, aber das ist noch lange kein
+        Grund mich hier festzuhalten.
+        <br /> <br />
+        Ich bin total süß und vertrage mich auch mit den anderen Likören in
+        deinem Schrank – ehrlich. Kaffelikör, Schokolikör, Fruchtlikör
       </Text>
     </Wrapper>
   );
@@ -31,7 +30,7 @@ const Wrapper = styled.section`
   justify-content: center;
   @media only screen and (max-width: 800px) {
     margin: 0 auto;
-    width: 29rem;
+    width: 24rem;
   }
 `;
 

@@ -1,22 +1,22 @@
 import styled from "styled-components";
 import Lakritzelimg from "./img/Lakritzel-Logo.svg";
-import { StyledImg } from "./Github";
+import { Img } from "./Github";
 
 function LakritzelHomepage() {
   return (
-    <StyledA href="https://lakritzel.com">
-      <StyledLakritzel>
-        <StyledImg src={Lakritzelimg} alt="Lakritzel, mein Schnaps" />
-      </StyledLakritzel>
-    </StyledA>
+    <Wrapper href="https://lakritzel.com">
+      <ImageContainer>
+        <Img src={Lakritzelimg} alt="Lakritzel, mein Schnaps" />
+      </ImageContainer>
+    </Wrapper>
   );
 }
 
-const StyledA = styled.a`
+const Wrapper = styled.a`
   grid-area: lakritzelHomepage;
 `;
 
-const StyledLakritzel = styled.div`
+const ImageContainer = styled.div`
   height: 90px;
   display: flex;
   justify-content: center;
