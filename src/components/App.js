@@ -131,6 +131,7 @@ const FlipCard = styled.section`
 `;
 
 const FlipCardFront = styled.section`
+  max-width: 1200px;
   margin: 0px 80px 0px 80px;
   backface-visibility: hidden;
   position: absolute;
@@ -147,10 +148,10 @@ const FlipCardFront = styled.section`
     grid-template-areas:
       "header"
       "lakritzel2"
-      "shop"
       "reception"
-      "quote"
+      "shop"
       "lakritzel1"
+      "quote"
       "quote2"
       "portfolioLink"
       "footer";

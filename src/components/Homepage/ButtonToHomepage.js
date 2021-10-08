@@ -18,7 +18,7 @@ const Wrapper = styled.section`
   grid-area: shop;
   @media only screen and (max-width: 800px) {
     margin: 0 auto;
-    width: 29rem;
+    width: 24rem;
   }
 `;
 

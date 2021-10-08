@@ -33,15 +33,15 @@ const Text = styled.p`
   margin: 0;
   font-family: "Inter", sans-serif;
 
-  @media only screen and (max-width: 375px) {
-    font-size: 10px;
+  @media only screen and (max-width: 800px) {
+    font-size: 12px;
   }
 `;
 const Icons = styled.img`
   height: 1.2rem;
   padding-right: 0.5rem;
   padding-left: 2rem;
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 800px) {
     height: 0.8rem;
   }
 `;
