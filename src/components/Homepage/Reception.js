@@ -7,9 +7,8 @@ function Reception() {
       <Text>
         Ich bin Lakritzel und dieser durchgeknallte Kritzelkopf hat mich über
         Nacht einfach abgefüllt, in diese Flasche gestopft und dann behauptet
-        ich sei total übergeschnapst. Pff, dabei habe ich gerade mal 25% Alkohol
-        ... gut der Zucker haut ein bisschen rein, aber das ist noch lange kein
-        Grund mich hier festzuhalten.
+        ich sei total übergeschnapst. LÄCHERLICH! Ich meine, sehe ich aus wie
+        eine Dschinni, der Wünsche erfüllt?
         <br /> <br />
         Ich bin total süß und vertrage mich auch mit den anderen Likören in
         deinem Schrank – ehrlich. Kaffelikör, Schokolikör, Fruchtlikör
