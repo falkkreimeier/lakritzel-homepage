@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Lakritzelimg from "./img/Lakritzel-Logo.svg";
 import { Img } from "./Github";
 
-function LakritzelHomepage() {
+function LinkZurLakritzelHomepage() {
   return (
     <Wrapper href="https://lakritzel.com">
       <ImageContainer>
@@ -30,4 +30,4 @@ const ImageContainer = styled.div`
   }
 `;
 
-export default LakritzelHomepage;
+export default LinkZurLakritzelHomepage;
