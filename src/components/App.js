@@ -1,17 +1,18 @@
 import styled, { css } from "styled-components";
 import HeaderHome from "./Homepage/Header";
-import Lakritzel2 from "./Homepage/Lakritzel2";
+import MotivLakritzelFlasche from "./Homepage/MotivLakritzelFlasche";
 import Reception from "./Homepage/Reception";
-import Lakritzel from "./Homepage/Lakritzel";
+import MotivÜbergeschnapst from "./Homepage/MotivÜbergeschnapst";
 import ButtonToShop from "./Homepage/ButtonToShop";
 import ButtonToHomepage from "./Homepage/ButtonToHomepage";
-import Quote from "./Homepage/Quote";
-import Quote2 from "./Homepage/Quote2";
+import ZitatDuBistSüß from "./Homepage/ZitatDuBistSüß";
+import ZitatDunkleSeite from "./Homepage/ZitatDunkleSeite";
 import PortfolioLink from "./Homepage/PortfolioLink";
+import BestellFormular from "./Homepage/BestellFormular";
 import Header from "./Portfolio/src/Header";
 import Footer from "./Portfolio/src/Footer";
 import Welcome from "./Portfolio/src/Welcome";
-import LakritzelHomepage from "./Portfolio/src/Lakritzel";
+import LinkZurLakritzelHomepage from "./Portfolio/src/Lakritzel";
 import Interests from "./Portfolio/src/Interests";
 import Profile from "./Portfolio/src/Profile";
 import Skills from "./Portfolio/src/Skills";
@@ -38,11 +39,11 @@ function App() {
           <FlipCard goToShop={goToShop}>
             <FlipCardFront>
               <HeaderHome />
-              <Lakritzel />
+              <MotivÜbergeschnapst />
               <Reception />
-              <Lakritzel2 />
-              <Quote />
-              <Quote2 />
+              <MotivLakritzelFlasche />
+              <ZitatDuBistSüß />
+              <ZitatDunkleSeite />
               <ButtonToShop handleButtonClick={goToShopButton} />
               <PortfolioLink />
               <Footer />
@@ -50,7 +51,8 @@ function App() {
 
             <FlipCardBack>
               <HeaderHome />
-              <Lakritzel2 />
+              <BestellFormular />
+              <MotivLakritzelFlasche />
               <ButtonToHomepage handleButtonClick={goToShopButton} />
               <Footer />
             </FlipCardBack>
@@ -68,7 +70,7 @@ function App() {
             <Portfolio />
             <Xing />
             <Github />
-            <LakritzelHomepage />
+            <LinkZurLakritzelHomepage />
             <Blog1 />
             <Blog2 />
             <Blog3 />
@@ -167,16 +169,17 @@ const FlipCardBack = styled.section`
   border-radius: 25px;
   display: grid;
   grid-template-areas:
-    "header header header"
-    "formular lakritzel2 shop"
-    "footer footer footer";
+    "header header "
+    "order lakritzel2"
+    "order shop"
+    "footer footer";
   grid-gap: 2px;
   @media only screen and (max-width: 800px) {
     max-width: 375px;
     grid-gap: 6px;
     grid-template-areas:
       "header"
-      "fomular"
+      "order"
       "lakritzel2"
       "shop"
       "footer";
