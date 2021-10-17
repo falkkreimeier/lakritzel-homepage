@@ -10,7 +10,7 @@ function Footer() {
       <Text>0152-05639742 </Text>
 
       <Icons src={Mail} alt="E-Mail Adresse" />
-      <Text>info@lakritzel.net</Text>
+      <Text>info@lakritzel.com</Text>
     </Wrapper>
   );
 }

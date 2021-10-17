@@ -83,6 +83,7 @@ function App() {
 }
 
 const Container = styled.div`
+  margin-left: 25px;
   display: grid;
   max-width: 100vh;
   grid-template-areas:
@@ -91,7 +92,7 @@ const Container = styled.div`
     "profileArea interests skills portfolio"
     "facts xing github lakritzelHomepage"
     "facts blog1 blog2 blog3"
-    "footerpf footerpf footerpf footerpf";
+    "footer footer footer footer";
   grid-gap: 0.2rem;
   text-align: center;
   font-family: "PT Serif", serif;
@@ -111,7 +112,7 @@ const Container = styled.div`
       "blog1"
       "blog2"
       "blog3"
-      "footerpf";
+      "footer";
     grid-gap: 0.5rem;
   }
 `;
